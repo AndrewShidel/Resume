@@ -1,6 +1,6 @@
 \documentclass[10pt]{article} 
 
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Margins
+\usepackage[hmargin=1.0cm, vmargin=1.0cm]{geometry} % Margins
 
 \usepackage{marvosym} % Required for symbols in the colored box
 \usepackage{ifsym} % Required for symbols in the colored box
@@ -64,13 +64,14 @@
 %----------------------------------------------------------------------------------------
 
 \par{\centering{\sffamily\Huge Andrew Shidel}\\ % Your name
-{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par}
+%{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par}
+\vspace{0.5cm}
 	
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------1
 
 \begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
 \vspace{0pt} % Trick for alignment
-	
+
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
@@ -89,6 +90,7 @@
 \textit{Software Engineering Co-Op}\\[5pt]}
 
 \begin{itemize}
+  \setlength\itemsep{0.4mm}
   \item[\ding{226}] Built system monitoring applications for streaming and metadata services.
   \item[\ding{226}] Designed and implemented an audio visualization library in C\# and C.
   \item[\ding{226}] Implemented a metadata annotation tool in PHP.
@@ -108,34 +110,54 @@
 
 
 \begin{itemize}
+  \setlength\itemsep{0.4mm}
   \item[\ding{226}] Led development on mobile applications for iOS and Android platforms.
   \item[\ding{226}] Interfaced with and contributed to a WCF cloud service to transmit and recieve data.
   \item[\ding{226}] Buillt a Database import utility using C\#, VB, WPF, and SQL.
 \end{itemize}
 
-\section{Projects} 
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+\textbf{American Pool Management} \hfill \textsc{Sept 2010 -- Sept 2013}
+{\raggedright\large\\
+\textit{Lifeguard and Pool Manager}\\[5pt]}
+\vspace{-0.5 cm}
+\begin{itemize}
+  \item[\ding{226}] Monitor activities in swimming areas, and maintain and repair equipment by analyzing pool chemicals.
+\end{itemize}
 
+\textbf{Keystone Fireworks} \hfill \textsc{Summer 2012}
+{\raggedright\large\\
+\textit{Salesman and Manager}\\[5pt]}
+\vspace{-0.5 cm}
+\begin{itemize}
+  \setlength\itemsep{0em}
+  \item[\ding{226}] Built, stocked, managed, and advertised a fireworks stand.
+\end{itemize}
+
+\section{Projects} 
 %------------------------------------------------
 % PROJECT EXPERIENCE
 %------------------------------------------------
 \textbf{Zephor:} \hfill \href{http://shidel.com/zephor.html}{shidel.com/zephor.html}
-\vspace{1 mm}\\
+\vspace{0.5 mm}\\
 An open source drone OS build using android as the "brain", UDP for communications, and QT with a leap motion camera as the control system. \\
 
 \textbf{AI Box:} \hfill \href{http://shidel.com/aibox.html}{shidel.com/aibox.html}
-\vspace{1 mm}\\
+\vspace{0.5 mm}\\
 An open source AI library written in JAVA and C++, designed to combine genetic algorithms, evolutionary programing, neural networks, and adjustable virtual circuits. \\
 
 \textbf{Reddit Social:} \hfill \href{http://shidel.com/redditsocial.html}{shidel.com/redditsocial.html}
-\vspace{1 mm}\\
+\vspace{0.5 mm}\\
 A Node.JS framwork for embeding comments into a web page, powered by the Reddit API. \\
 
 \textbf{Chrome Leap Tools:} \hfill \href{http://shidel.com/leaptools.html}{shidel.com/leaptools.html}
-\vspace{1 mm}\\
+\vspace{0.5 mm}\\
 A Chrome extension enabling gesture based browsing using a Leap Motion Controler.\\
 
 \textbf{Green Screen Photography:} \hfill \href{http://shidel.com/greenscreen.html}{shidel.com/greenscreen.html}
-\vspace{1 mm}\\
+\vspace{0.5 mm}\\
 Image edditing application for Android. Build to capture images, remove backgrounds, and
 layer images. \\
 
@@ -176,7 +198,11 @@ Intermediate Knowledge
 & \textsc{go}, Ruby, C\#, SQL \\
 & \LaTeX, \textsc{php} \\ \\
 Basic Knowledge
-& \textsc{java}, Adobe Illustrator\\ 
+& Matlab, Maple, Visual Basic, \\
+& MIPS Assembly\\ \\
+Platforms
+& Linux (Ubuntu, Cent), Windows,\\ 
+& Mac, IOS, Android\\ 
 & \\
 \end{tabular}
 
@@ -187,7 +213,7 @@ Basic Knowledge
 
 \section{Education} 
 
-\textbf{Drexel University} \hfill \textit{Sept. 2012 - Present}
+\textbf{Drexel University} \hfill \textsc{Sept. 2012 - Present}
 
 \textit{\hspace*{5 mm}Bachelors of Computer Science}\\
 \textit{\hspace*{5 mm}Minor in Buissness Administration}\\
@@ -216,6 +242,9 @@ Computer
 \textsc{Sciences}
 & Physics I, II, III
 \end{tabular}\\[10pt]
+
+\section{University Projects}
+
 
 %----------------------------------------------------------------------------------------
 	
