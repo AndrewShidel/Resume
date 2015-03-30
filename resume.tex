@@ -7,6 +7,8 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
 
+\usepackage{pifont}
+
 \usepackage{graphicx}
 \graphicspath{ {images/}  }
 
@@ -16,6 +18,13 @@
 \setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
 %\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{tabularx}
 
 % Colors for links, text and headings
 \usepackage{hyperref}
@@ -72,25 +81,37 @@
 % WORK EXPERIENCE 1
 %------------------------------------------------
 
-{\raggedleft\textsc{Sept 2014 -- Mar 2015}\par}
-
-\includegraphics[height=0.6cm]{siriusxm}
+\begin{tabular}{ L{5cm} R{3.5cm} }
+\includegraphics[height=0.5cm]{siriusxm} & 
+{\raggedleft\textsc{Sept 2014 -- Mar 2015}} \\
+\end{tabular}
 {\raggedright\large \\
 \textit{Software Engineering Co-Op}\\[5pt]}
 
-\normalsize{Provided analysis of spreads, in particular time and location spreads, with emphasis on trading opportunities on the curve, also taking into account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}\\
+\begin{itemize}
+  \item[\ding{226}] Built system monitoring applications for streaming and metadata services.
+  \item[\ding{226}] Designed and implemented an audio visualization library in C\# and C.
+  \item[\ding{226}] Implemented a metadata annotation tool in PHP.
+\end{itemize}
 
 %------------------------------------------------
 % WORK EXPERIENCE 2
 %------------------------------------------------
 
-{\raggedleft\textsc{Sept 2013 -- Mar 2014}\par}
-
-\includegraphics[height=0.6cm]{dossier}
+\begin{tabular}{ L{5cm} R{3.5cm} }
+\includegraphics[height=0.5cm]{dossier} & 
+{\raggedleft\textsc{Sept 2013 -- Mar 2014}} \\
+\end{tabular}
 {\raggedright\large\\
 \textit{Software Engineering Co-Op}\\[5pt]}
 
-\normalsize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
+
+
+\begin{itemize}
+  \item[\ding{226}] Led development on mobile applications for iOS and Android platforms.
+  \item[\ding{226}] Interfaced with and contributed to a WCF cloud service to transmit and recieve data.
+  \item[\ding{226}] Buillt a Database import utility using C\#, VB, WPF, and SQL.
+\end{itemize}
 
 \section{Projects} 
 
@@ -116,17 +137,6 @@
 
 \normalsize{Provided analysis of spreads, in particular time and location spreads, with emphasis on trading opportunities on the curve, also taking into account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}\\
 
-%------------------------------------------------
-% PROJECT EXPERIENCE 3
-%------------------------------------------------
-
-{\raggedleft\textsc{July 2008 -- Oct 2008}\par}
-
-{\raggedright\large 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London\\
-\textit{Commodities Structured Trading}\\[5pt]}
-
-\normalsize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
-
 %----------------------------------------------------------------------------------------	
 
 \end{minipage} % End the left-hand side of the page
@@ -148,103 +158,64 @@
 }
 }\\[10pt]
 
+
+%----------------------------------------------------------------------------------------
+%	Technical Skills
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+\begin{tabular}{rl}
+Advanced Knowledge
+& \textsc{java}, \textsc{html}/JavaScript/\textsc{css}, \\ 
+& C/C++, \textsc{python}\\ 
+& \\
+Intermediate Knowledge
+& \textsc{go}, Ruby, C\#, SQL \\
+& \LaTeX, \textsc{php} \\ \\
+Basic Knowledge
+& \textsc{java}, Adobe Illustrator\\ 
+& \\
+\end{tabular}
+
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
 \section{Education} 
 
-\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+\textbf{Drexel University} \hfill \textit{Sept. 2012 - Present}
 
-%------------------------------------------------
-% EDUCATION 1
-%------------------------------------------------
+\textit{\hspace*{5 mm}Bachelors of Computer Science}\\
+\textit{\hspace*{5 mm}Minor in Buissness Administration}\\
+\textit{\hspace*{5 mm}Expected Graduation: June 2017}\\
 
-2011 -- \textsc{Present} & \textbf{Doctor of Philosophy} \\ 
-& \textsc{Computer Science} \\ 
-& \textit{The University of California}\\
-&\\
-	 
-%------------------------------------------------
-% EDUCATION 2
-%------------------------------------------------
-
-2010 & \textbf{Master of Science} \\ 
-& \small First Class Honours \\
-& \textsc{Computer Science} \\ 
-& \textit{The University of California}\\
-&\\
-	 
-%------------------------------------------------
-% EDUCATION 3
-%------------------------------------------------
-
-2009 & \textbf{Postgraduate Diploma}\\
-& \small Distinction \\
-& \textsc{Computer Science} \\
-& \textit{The University of California}\\
-&\\
-	 
-%------------------------------------------------
-% EDUCATION 4
-%------------------------------------------------
-
-2006 -- 2008 & \textbf{Bachelor of Business Studies}\\
-& \textsc{Commerce} \\
-& \textit{The University of California} 
-	
-%----------------------------------------------------------------------------------------
-
-\end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
-%	AWARDS
+%	Coursework
 %----------------------------------------------------------------------------------------
 
-\section{Awards} 
+\section{Relevant Coursework} 
+
+%Calculus I, II??????????, IV, Linear Algebra, Discrete, Statistics 
+%Computer Science I%Engineering Design Lab I, II??????????%Advanced Programming Tools and Techniques Systems Programming
+
 
 \begin{tabular}{rl}
-2010	 & \textbf{Faculty of Science Masters Scholarship}\\
-& \textit{The University of California}\\ \\
-
-%------------------------------------------------
-
-2008	 & \textbf{Top Achiever Award -- Commerce}\\
-& \textit{Business Association of California}
-\end{tabular}\\[10pt]
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
-
-\section{Computer Skills} 
-
-\begin{tabular}{rl}
-Basic Knowledge
-& \textsc{java}, Adobe Illustrator\\ 
-& \\
-Intermediate Knowledge
-& \textsc{python}, \textsc{html}, \LaTeX,\\
-& OpenOffice, Linux,\\
-& Microsoft Windows \\
-& Computer Hardware \& \\
-& Support\\ \\
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS
-%----------------------------------------------------------------------------------------
-
-\section{Communication Skills} 
-
-\begin{tabular}{rl}
-\textsc{Conferences}
-& Oral Presentation at the California \\
-& Computer Science Conference -- 2010\\
-& \\
-\textsc{Posters}
-& Poster at the Annual Programming \\
-& Conference in Oregon -- 2009 \\
+\textsc{Math}
+& Calculus I, II, III, IV, Linear Algebra, \\
+& Discrete, Statistics\\\\
+Computer
+& Alg. and Data Structs., Software Design, \\
+& Programming I, II, Systems Programming, \\
+& Advanced Programming Tools and Techniques, \\
+& Artificial Intelegence, Systems Architecture, \\
+& Digital Design, \\
+\textsc{Engineering}
+& Engineering Design Lab I, II\\
+\textsc{Sciences}
+& Physics I, II, III
 \end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
